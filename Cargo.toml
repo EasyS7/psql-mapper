@@ -1,0 +1,14 @@
+[package]
+name = "tokio-postgres-mapper"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+doctest = false
+
+[dependencies]
+tokio-postgres = "0.5"
+tokio-postgres-mapper-derive = {optional = true, path="./postgres_mapper_derive"}
+
+[features]
+derive = ["tokio-postgres-mapper-derive"]
